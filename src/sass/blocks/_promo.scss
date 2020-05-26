@@ -1,0 +1,147 @@
+.promo {
+    background: url('../../img/bg_1.jpg') center (center/cover) no-repeat;
+    min-height: 700px;
+    &__logo {
+        position: absolute;
+        margin-top: 39px;
+        z-index: 90;
+    }
+    &__inner {
+        width: 100%;    }
+    &-sl {
+        &__img {
+            margin-left: 706px;
+            margin-top: 131px;
+        }
+        &__descr {
+            position: absolute;
+            top: 0;
+            margin-top: 237px;
+            h2 {
+                margin: 0;
+                font-family: Roboto;
+                font-size: 42px;
+                line-height: 48px;
+                font-weight: 900;
+                color: #ffffff;
+                max-width: 528px;
+            }
+            p {
+                margin: 0;
+                margin-top: 27px;
+                font-family: Roboto;
+                color: #ffffff; 
+                max-width: 401px;
+                font-weight: 300;
+                span {
+                    font-size: 24px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    
+                }
+            }
+        }
+    }
+    
+}
+.header {
+    position: absolute;
+    right: 0;
+    margin-top: 64px;
+    width: 540px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 90;
+    a {
+        font-family: Roboto;
+        font-size: 13px;
+        line-height: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+}
+
+.my-dots {
+    position: absolute;
+    bottom: 68px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+  
+.my-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 -3px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.my-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+    outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+    opacity: 1;
+}
+
+.my-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: url('../../icons/ellipse.png');
+    text-align: center;
+    opacity: .25;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+
+.my-dots li.slick-active button:before {
+    opacity: .75;
+    color: white;
+    content: url('../../icons/ellipse_active.png');
+}
+
+.slick-arrow {
+    border: none;
+    background: none;
+    position: absolute;
+    left: 602px;
+    bottom: 86px;
+    z-index: 90;
+    &:focus {
+        outline: none;
+    }
+}
+
+.slick-prev {
+    left: 518px;
+}
+  

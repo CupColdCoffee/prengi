@@ -1,0 +1,28 @@
+.contacts {
+    &__country {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 85px; 
+    }
+    &-item {
+        display: flex;
+        &__img {
+            width: 28px;
+            height: 21px;
+        }
+        &__descr {
+            font-family: Roboto;
+            color: #242424;
+            margin-left: 11px;
+            &-title {
+                font-size: 14px;
+                font-weight: 700;
+            }
+            &-info {
+                font-size: 12px;
+                font-weight: 300;
+            }
+        }
+    }
+}
